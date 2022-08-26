@@ -2,7 +2,7 @@
   <section class="banner d-flex align-items-center">
     <div class="container">
       <p>
-        每個生命的誕生是如此珍貴與感恩，<br>
+        每個生命的誕生是如此珍貴與感恩，<br />
         用最真誠的心紀錄媽咪和寶貝的每一刻、每一秒、每一個瞬間。
       </p>
       <button class="btn btn-white text-white border border-white">前往預約</button>
