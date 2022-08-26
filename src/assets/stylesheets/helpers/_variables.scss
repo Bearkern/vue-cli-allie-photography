@@ -298,8 +298,8 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #5B5050 !default;//$blue !default;
+$secondary:     #F5EEEC !default;//$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -371,14 +371,23 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
+$base: 16;
+$base-spacer: 4;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: ($base-spacer * 1) / $base * $spacer,
+  2: ($base-spacer * 2) / $base * $spacer,
+  3: ($base-spacer * 3) / $base * $spacer,
+  4: ($base-spacer * 4) / $base * $spacer,
+  5: ($base-spacer * 5) / $base * $spacer,
+  6: ($base-spacer * 6) / $base * $spacer,
+  8: ($base-spacer * 8) / $base * $spacer,
+  10: ($base-spacer * 10) / $base * $spacer,
+  12: ($base-spacer * 12) / $base * $spacer,
+  16: ($base-spacer * 16) / $base * $spacer,
+  20: ($base-spacer * 20) / $base * $spacer,
+  28: ($base-spacer * 28) / $base * $spacer,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -399,7 +408,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $primary !default;//$gray-900 !default;
 $body-text-align:           null !default;
 
 // Links
@@ -591,7 +600,7 @@ $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
-$headings-color:              null !default;
+$headings-color:              $primary !default;//null !default;
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
@@ -805,7 +814,7 @@ $form-label-margin-bottom:              .5rem !default;
 $form-label-font-size:                  null !default;
 $form-label-font-style:                 null !default;
 $form-label-font-weight:                null !default;
-$form-label-color:                      null !default;
+$form-label-color:                      $primary !default;//null !default;
 // scss-docs-end form-label-variables
 
 // scss-docs-start form-input-variables

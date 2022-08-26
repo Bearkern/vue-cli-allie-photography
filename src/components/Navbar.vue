@@ -1,44 +1,55 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <RouterLink class="navbar-brand" to="/">Navbar</RouterLink>
-    <button class="navbar-toggler" type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false"
-    aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"
-          href="#" id="navbarDropdown" role="button"
-          data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  <nav class="navbar navbar-expand-lg navbar-light py-4">
+    <div class="container">
+      <h1>
+        <RouterLink class="navbar-brand" to="/"> 艾里攝影工作室 </RouterLink>
+      </h1>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <RouterLink to="/about" class="nav-link">關於艾里</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/photographs" class="nav-link">攝影作品</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/projects" class="nav-link">攝影方案</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/contact" class="nav-link">聯絡我們</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/appointment" class="nav-link">
+              <span class="material-symbols-outlined"> local_mall </span>
+            </RouterLink>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 </template>
+
+<style lang="scss" scoped>
+h1 {
+  a {
+    display: block;
+    background-image: url(../assets/images/allie-logo.png);
+    width: 351px;
+    height: 155px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+</style>

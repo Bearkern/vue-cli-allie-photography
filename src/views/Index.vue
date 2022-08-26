@@ -1,8 +1,8 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid p-0">
     <Navbar />
     <RouterView />
-    <footer />
+    <Footer />
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
-  componets: {
+  components: {
     Navbar,
     Footer,
   },

@@ -9,7 +9,7 @@ const routes = [
     component: () => import('@/views/Index.vue'),
     children: [
       {
-        path: '',
+        path: '/',
         name: 'home',
         component: () => import('@/views/Home.vue'),
         meta: {
