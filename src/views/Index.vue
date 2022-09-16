@@ -1,9 +1,7 @@
 <template>
-  <div class="container-fluid p-0">
-    <Navbar />
-    <RouterView />
-    <Footer />
-  </div>
+  <Navbar />
+  <RouterView />
+  <Footer />
 </template>
 
 <script>
