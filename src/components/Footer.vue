@@ -1,7 +1,7 @@
 <template>
   <footer class="footer text-center bg-primary text-white py-12">
     <img
-      src="../assets/images/allie-logo.png"
+      src="../assets/images/logo-name-transparent.svg"
       alt="allie logo"
       class="footer-logo mb-4"
     />
@@ -28,8 +28,8 @@
 <style lang="scss" scoped>
 .footer {
   &-logo {
-    width: 351px;
-    height: 155px;
+    width: 256px;
+    height: 66px;
   }
 }
 .nav-item {

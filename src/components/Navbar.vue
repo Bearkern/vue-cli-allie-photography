@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg fixed-top bg-light">
+  <nav class="navbar navbar-expand-lg fixed-top bg-white">
     <div class="container">
       <h1>
         <RouterLink class="navbar-brand" to="/"> 艾里攝影工作室 </RouterLink>
@@ -55,10 +55,10 @@ export default {
 .navbar {
   &-brand {
     display: block;
-    background-image: url(../assets/images/allie-logo.png);
-    background-size: contain;
-    height: 60px;
-    width: 133px;
+    background-image: url(../assets/images/logo-name-white.svg);
+    background-size: cover;
+    height: 66px;
+    width: 256px;
     @include hide-text;
   }
   &-toggler {
